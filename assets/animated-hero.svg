@@ -1,58 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
-  <title id="title">Aman Malu</title>
-  <desc id="desc">Minimal editorial banner for a finance and analytics portfolio, with one restrained animated data line.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Aman Malu — Finance and Analytics</title>
+  <desc id="desc">A warm, light editorial banner with a restrained animated line chart.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAF9F5"/>
+      <stop offset="1" stop-color="#F1F0E8"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#245B4B"/>
+      <stop offset="1" stop-color="#7B9561"/>
+    </linearGradient>
+  </defs>
   <style>
-    .trace {
-      fill: none;
-      stroke: #B4D96C;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-dasharray: 620;
-      stroke-dashoffset: 620;
-      animation: draw 16s cubic-bezier(.65, 0, .35, 1) infinite;
+    .draw {
+      fill: none; stroke: url(#ink); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
+      stroke-dasharray: 530; stroke-dashoffset: 530;
+      animation: draw 14s cubic-bezier(.65,0,.35,1) infinite;
     }
-    .endpoint {
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: settle 16s ease-in-out infinite;
-    }
+    .dot { animation: dot 14s ease-in-out infinite; }
     @keyframes draw {
-      0%, 6% { stroke-dashoffset: 620; opacity: .3; }
-      62%, 90% { stroke-dashoffset: 0; opacity: 1; }
-      100% { stroke-dashoffset: 0; opacity: .8; }
+      0%, 8% { stroke-dashoffset: 530; opacity: .35; }
+      55%, 86% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: .75; }
     }
-    @keyframes settle {
-      0%, 60% { opacity: 0; transform: scale(.7); }
-      70%, 92% { opacity: 1; transform: scale(1); }
-      100% { opacity: .65; transform: scale(.95); }
+    @keyframes dot {
+      0%, 54% { opacity: 0; }
+      62%, 90% { opacity: 1; }
+      100% { opacity: .6; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .trace, .endpoint { animation: none; }
-      .trace { stroke-dashoffset: 0; opacity: .9; }
-      .endpoint { opacity: 1; }
+      .draw, .dot { animation: none; }
+      .draw { stroke-dashoffset: 0; }
+      .dot { opacity: 1; }
     }
   </style>
-  <rect width="1200" height="240" fill="#101311"/>
-  <rect x=".5" y=".5" width="1199" height="239" fill="none" stroke="#303831"/>
-  <path d="M56 38 H1144" stroke="#39413A" stroke-width="1"/>
-  <text x="56" y="26" fill="#A8B1A7" font-family="Inter, Helvetica, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2.2">BENGALURU, INDIA  /  FINANCE &amp; ANALYTICS</text>
-  <text x="54" y="126" fill="#F1F2EC" font-family="Inter, Helvetica, Arial, sans-serif" font-size="66" font-weight="600" letter-spacing="-2.8">Aman Malu</text>
-  <text x="58" y="164" fill="#B7C0B6" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" letter-spacing=".35">Finance · Analytics · Software</text>
-  <path d="M56 198 H650" stroke="#39413A" stroke-width="1"/>
-  <path d="M56 198 H242" stroke="#B4D96C" stroke-width="2"/>
-  <g opacity=".38" stroke="#596158" stroke-width="1">
-    <path d="M770 70 V198"/>
-    <path d="M850 70 V198"/>
-    <path d="M930 70 V198"/>
-    <path d="M1010 70 V198"/>
-    <path d="M1090 70 V198"/>
-    <path d="M730 102 H1144"/>
-    <path d="M730 150 H1144"/>
-    <path d="M730 198 H1144"/>
+  <rect width="1200" height="260" rx="4" fill="url(#paper)"/>
+  <rect x=".5" y=".5" width="1199" height="259" fill="none" stroke="#DADCD2"/>
+  <text x="54" y="38" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2.1" fill="#68736A">FINANCE  /  ANALYTICS  /  SOFTWARE</text>
+  <path d="M54 54 H1146" stroke="#DADCD2"/>
+  <text x="52" y="133" font-family="Georgia, 'Times New Roman', serif" font-size="65" letter-spacing="-2.1" fill="#202A25">Aman Malu</text>
+  <text x="56" y="169" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#59655D">Building tools at the intersection of markets and technology.</text>
+  <path d="M56 206 H564" stroke="#DADCD2"/>
+  <path d="M56 206 H160" stroke="#245B4B" stroke-width="2"/>
+  <text x="56" y="229" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1.5" fill="#68736A">BENGALURU, INDIA</text>
+  <g opacity=".75" stroke="#D7DCD2" stroke-width="1">
+    <path d="M696 82 V206"/><path d="M780 82 V206"/><path d="M864 82 V206"/>
+    <path d="M948 82 V206"/><path d="M1032 82 V206"/><path d="M1116 82 V206"/>
+    <path d="M696 82 H1146"/><path d="M696 123 H1146"/><path d="M696 164 H1146"/><path d="M696 206 H1146"/>
   </g>
-  <path d="M730 198 L784 183 L832 189 L882 139 L930 150 L978 111 L1026 128 L1077 88 L1144 72" fill="none" stroke="#4C5848" stroke-width="1.2"/>
-  <path class="trace" d="M730 198 L784 183 L832 189 L882 139 L930 150 L978 111 L1026 128 L1077 88 L1144 72"/>
-  <circle class="endpoint" cx="1144" cy="72" r="3.5" fill="#B4D96C"/>
-  <text x="730" y="220" fill="#8F9A8F" font-family="SFMono-Regular, Consolas, monospace" font-size="9" letter-spacing="1.5">OBSERVE  /  ANALYSE  /  BUILD</text>
+  <path d="M696 194 L758 178 L814 185 L874 143 L930 153 L990 113 L1048 130 L1097 94 L1146 76" fill="none" stroke="#BFCBBC" stroke-width="1.4"/>
+  <path class="draw" d="M696 194 L758 178 L814 185 L874 143 L930 153 L990 113 L1048 130 L1097 94 L1146 76"/>
+  <circle class="dot" cx="1146" cy="76" r="3.5" fill="#245B4B"/>
+  <text x="696" y="229" font-family="SFMono-Regular, Consolas, monospace" font-size="9" letter-spacing="1.3" fill="#68736A">OBSERVE  →  ANALYSE  →  BUILD</text>
 </svg>

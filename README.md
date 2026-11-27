@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/aman482006-beep/aman482006-beep/main/assets/animated-hero.svg" width="100%" alt="Aman Malu — Finance, Analytics and Software" />
 
-<p><strong>Finance × Analytics × Product Engineering</strong></p>
+<p><strong>Finance × AI × Product Engineering</strong></p>
 
 <a href="https://www.linkedin.com/in/amanmalu/">LinkedIn</a>
 &nbsp;·&nbsp;
@@ -28,8 +28,8 @@ I build practical tools where finance meets software: market-intelligence dashbo
 
 | Project | What it does |
 |:--|:--|
+| [**ModelForge**](https://github.com/aman482006-beep/Automated-Financial-Modelling-Agent) · [Live demo](https://aman482006-beep.github.io/Automated-Financial-Modelling-Agent/) | A no-account browser workspace to import financial statements, validate data, build linked forecasts, run DCF and trading-comparable valuations, test sensitivities, and export formula-linked Excel workbooks. |
 | [**Finance Roast Room**](https://github.com/aman482006-beep/Finance-Roast-Room) | A 20-advisor simulated finance council that debates investment, valuation and capital-allocation decisions through structured rounds and weighted verdicts. |
-| [**ModelForge**](https://github.com/aman482006-beep/Automated-Financial-Modelling-Agent) | A browser-based financial-modelling workspace for statement analysis, integrated forecasts, DCF, trading comparables, sensitivities and formula-linked Excel exports. |
 | [**Market Monitor**](https://github.com/aman482006-beep/market-monitor) | Indian equity-market intelligence with data ingestion, market breadth, scanners, risk-regime analysis and a FastAPI/Next.js stack. |
 | [**Agentic Finance Research Lab**](https://github.com/aman482006-beep/Aman-trading-agent) | Research prototypes for portfolio-risk guardrails, evidence-led research workflows and earnings-document intelligence, alongside clearly attributed upstream framework code. |
 | [**QuantLab**](https://github.com/aman482006-beep/AI-Powered-Quantitative-Trading-System) | Historical strategy research and backtesting with a browser terminal and a Python/Streamlit research app. It does not execute live trades. |
